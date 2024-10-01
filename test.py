@@ -4,7 +4,7 @@ import sys
 import json
 
 pubmed_id = sys.argv[1]
-script_path = ["python","get_pmid.py","pubmed_id"]
+script_path = ["python","get_pmid.py",pubmed_id]
 try:
     data = subprocess.run(script_path, stdout=subprocess.PIPE, check=True)
 except subprocess.CalledProcessError as e:
